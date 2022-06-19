@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+    --img-width: 978px;
+    --dark-cyan: hsl(185, 75%, 39%);
+    --dark-blue: hsl(229, 23%, 23%);
+    --dark-grey-blue: hsl(227, 10%, 46%);
+    --dark-grey: hsl(0, 0%, 59%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    background: hsl(185, 75%, 39%);
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.bg-top, .bg-bottom {
+    position: absolute;
+    width: var(--img-width);
+}
+
+.bg-top {
+    top: -31.5rem;
+    left: -18rem;
+}
+
+.bg-bottom {
+    bottom: -39.5rem;
+    right: -14.1875rem;
+}
+
+.profile-card {
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 0.625rem;
+    overflow: hidden;
+}
+
+.bg-profile {
+    width: 100%;
+}
+
+.img-profile {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+.profile-wrapper {
+    position: relative;
+    padding-top: 3.25rem;
+    text-align: center;
+}
+
+.text-name {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-right: 1.125rem;
+}
+
+.text-number {
+    color: var(--dark-grey-blue);
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.text-city {
+    padding-top: 0.25rem;
+    color: var(--dark-grey-blue);
+    font-size: 1.125rem;
+}
+
+.text-big {
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.text-small {
+    color: var(--dark-grey-blue);
+    font-size: 0.75rem;
+}
+
+.detail-wrapper {
+    border-top: 1px solid #E7E7E7;
+    margin-top: 1.5rem;
+    padding: 1.5rem 0;
+    display: flex;
+}
+
+.detail-item {
+    flex: 1;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
